@@ -1,0 +1,14 @@
+.badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid;
+    white-space: nowrap;
+}
+
+.fallback {
+    font-size: 0.78rem;
+    color: #888;
+    white-space: nowrap;
+}

@@ -1,0 +1,57 @@
+.row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 2px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+    cursor: pointer;
+    user-select: none;
+}
+
+.caught {
+    opacity: 0.45;
+}
+
+.sprite {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
+
+.spriteCaught {
+    filter: grayscale(1);
+    transition: filter 0.15s;
+}
+
+.name {
+    flex: 1;
+    min-width: 0;
+    font-size: 0.92rem;
+}
+
+.nameCaught {
+    text-decoration: line-through;
+}
+
+.id {
+    color: #888;
+    margin-right: 4px;
+}
+
+.meta {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.metaText {
+    font-size: 0.78rem;
+    color: #888;
+    white-space: nowrap;
+}
+
+.timeOfDay {
+    font-size: 0.85rem;
+    white-space: nowrap;
+}

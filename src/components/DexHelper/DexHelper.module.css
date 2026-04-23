@@ -1,0 +1,49 @@
+.progress {
+    margin-bottom: 1rem;
+}
+
+.progressText {
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.filterSearch {
+    flex: 1 1 200px;
+    min-width: 160px;
+}
+
+.sortGroup {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.sortLabel {
+    font-size: 0.82rem;
+    color: #888;
+    white-space: nowrap;
+}
+
+.filterCheck {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.empty {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #888;
+}
+
+.reset {
+    margin-top: 3rem;
+    text-align: center;
+}

@@ -1,0 +1,66 @@
+.header {
+    all: unset;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 14px;
+    box-sizing: border-box;
+}
+
+.headerInner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chevron {
+    font-size: 0.7rem;
+    color: #888;
+    flex-shrink: 0;
+}
+
+.locationName {
+    flex: 1;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.regionTag {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+}
+
+.countComplete {
+    font-size: 0.85rem;
+    flex-shrink: 0;
+    color: #198754;
+    font-weight: 600;
+}
+
+.countPartial {
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+.countMuted {
+    color: #888;
+}
+
+.body {
+    border-top: 1px solid rgba(128, 128, 128, 0.15);
+    padding: 8px 14px 4px;
+}
+
+.bodyHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.caughtSummary {
+    font-size: 0.82rem;
+    color: #888;
+}

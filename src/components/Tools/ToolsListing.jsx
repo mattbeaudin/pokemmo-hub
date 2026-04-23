@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import { Image } from 'react-bootstrap'
-import { CatchCalcIcon, SearchIcon, ArchetypeIcon, BerryIcon, CosmeticsIcon, EggIcon, EggMovesIcon, PokedexIcon, BreedingIcon } from '../../assets/icons'
+import { CatchCalcIcon, SearchIcon, ArchetypeIcon, BerryIcon, CosmeticsIcon, EggIcon, EggMovesIcon, PokedexIcon, BreedingIcon, Snorlax } from '../../assets/icons'
 import { useTranslations } from '../../context/TranslationsContext'
 import { useDarkMode } from '../../context/DarkModeContext'
 import { Badge } from '../Atoms'
@@ -26,6 +26,12 @@ const TOOLS = [
         url: '/tools/pokedex/',
         icon: PokedexIcon,
         description: 'View every pokemon\'s locations, catch rates, move lists, and stats.'
+    },
+    {
+        label: 'Dex Helper',
+        url: '/tools/dex-helper/',
+        icon: Snorlax,
+        description: 'Find locations with the most uncaught Pokemon to fill your Pokedex faster.'
     },
     {
         label: 'Pokemon Search',
