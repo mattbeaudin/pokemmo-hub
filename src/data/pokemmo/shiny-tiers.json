@@ -1,0 +1,23 @@
+[
+  { "id": 19, "name": "Rattata", "tier": 0 },
+  { "id": 16, "name": "Pidgey", "tier": 0 },
+  { "id": 41, "name": "Zubat", "tier": 0 },
+  { "id": 74, "name": "Geodude", "tier": 0 },
+
+  { "id": 11, "name": "Metapod", "tier": 1 },
+  { "id": 14, "name": "Kakuna", "tier": 1 },
+  { "id": 20, "name": "Raticate", "tier": 1 },
+  { "id": 109, "name": "Koffing", "tier": 1 },
+
+  { "id": 88, "name": "Grimer", "tier": 2 },
+  { "id": 72, "name": "Tentacool", "tier": 2 },
+  { "id": 66, "name": "Machop", "tier": 2 },
+  { "id": 77, "name": "Ponyta", "tier": 2 },
+
+  { "id": 132, "name": "Ditto", "tier": 3 },
+  { "id": 183, "name": "Marill", "tier": 3 },
+  { "id": 22, "name": "Fearow", "tier": 3 },
+  { "id": 55, "name": "Golduck", "tier": 3 },
+  { "id": 510, "name": "Liepard", "tier": 3 },
+  { "id": 118, "name": "Goldeen", "tier": 3 }
+]

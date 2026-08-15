@@ -28,6 +28,10 @@ const NAVIGATION_MENU_ITEMS = {
         {
             label: 'Cosmetics Helper',
             url: '/tools/cosmetics'
+        },
+        {
+            label: 'Horde Finder',
+            url: '/tools/horde-finder'
         }
     ],
     EXTERNAL_RESOURCES: [
