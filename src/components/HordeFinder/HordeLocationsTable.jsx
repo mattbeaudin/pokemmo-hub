@@ -15,35 +15,40 @@ export const HordeLocationsTable = ({ encounters }) => {
                 <tr>
                     <th>{t('Location')}</th>
                     <th>{t('Region')}</th>
-                    <th>{t('Chance')}</th>
+                    <th>{t('Type')}</th>
+                    <th>{t('Level')}</th>
                     <th>{t('Season')}</th>
                     <th>{t('Time of Day')}</th>
-                    <th>{t('Group Size')}</th>
                 </tr>
             </thead>
             <tbody>
                 {
-                    encounters.map(encounter => (
-                        <React.Fragment key={encounter.key}>
-                            <tr>
-                                <td className="text-capitalize">{t(encounter.location)}</td>
-                                <td className="text-capitalize">{t(encounter.region_name)}</td>
-                                <td>{encounter.percentage !== null ? `${encounter.percentage}%` : '—'}</td>
-                                <td>{encounter.season ? t(encounter.season) : '—'}</td>
-                                <td>{encounter.time_of_day ? t(encounter.time_of_day) : '—'}</td>
-                                <td>{encounter.group_size ? `${encounter.group_size}x` : '—'}</td>
-                            </tr>
-                            {
-                                encounter.others.length > 0 && (encounter.percentage === null || encounter.percentage < 100)
-                                    ? <tr>
-                                        <td colSpan={6} className="text-muted small">
-                                            {t('Also in this horde:')} {encounter.others.map(other => `${t(other.name)} (${other.percentage !== null ? `${other.percentage}%` : '?'})`).join(', ')}
-                                        </td>
-                                    </tr>
-                                    : false
-                            }
-                        </React.Fragment>
-                    ))
+                    encounters.map(encounter => {
+                        const level = encounter.min_level === encounter.max_level
+                            ? encounter.min_level
+                            : `${encounter.min_level} - ${encounter.max_level}`
+                        return (
+                            <React.Fragment key={encounter.key}>
+                                <tr>
+                                    <td className="text-capitalize">{t(encounter.name)}</td>
+                                    <td className="text-capitalize">{t(encounter.region_name)}</td>
+                                    <td className="text-capitalize">{t(encounter.type)}</td>
+                                    <td>{level}</td>
+                                    <td>{encounter.season ? t(encounter.season) : '—'}</td>
+                                    <td>{encounter.timesOfDay.length ? encounter.timesOfDay.map(time => t(time)).join(', ') : '—'}</td>
+                                </tr>
+                                {
+                                    encounter.others.length > 0
+                                        ? <tr>
+                                            <td colSpan={6} className="text-muted small">
+                                                {t('Also in this horde:')} {encounter.others.map(other => t(other.name)).join(', ')}
+                                            </td>
+                                        </tr>
+                                        : false
+                                }
+                            </React.Fragment>
+                        )
+                    })
                 }
             </tbody>
         </Table>

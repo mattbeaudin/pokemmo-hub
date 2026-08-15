@@ -2,7 +2,7 @@ import React, { useMemo } from 'react'
 import { Modal } from '../Atoms'
 import { useTranslations } from '../../context/TranslationsContext'
 import { getPokemon } from '../../utils/pokemon'
-import { getHordeEncounterDetails } from '../../utils/hordeFinder'
+import { getHordeEncounterDetails } from '../../utils/location'
 import { HordeLocationsTable } from './HordeLocationsTable'
 
 export const HordeDetailModal = ({ pokemonId, onHide }) => {

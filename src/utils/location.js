@@ -1,4 +1,4 @@
-import { POKEMON } from './pokemon.js'
+import { POKEMON, getPokemon } from './pokemon.js'
 
 const generateRoutes = (region_id) => {
     const locations = POKEMON.map(p => p.locations.filter(l => l.region_id === region_id)).flat();
@@ -98,12 +98,80 @@ export const getType = (type_id) => ENCOUNTER_TYPE[type_id]
 
 export const getRoute = (route) => {
     if (!route) return []
-    return ROUTES[route.toLowerCase()].map(location => ({ key: location.location_name_full, label: location.location_name_full }))
+    return ROUTES[route.toLowerCase()].map(location => ({ key: location.location, label: location.location }))
 }
 
-export const matchesHordeFilter = (location, hordeFilter) => {
-    if (!hordeFilter) return true
-    if (hordeFilter === '3x') return location.is_horde_3x
-    if (hordeFilter === '5x') return location.is_horde_5x
-    return location.is_horde_3x || location.is_horde_5x
+export const TIME_OF_DAY = ['Morning', 'Day', 'Night']
+
+export const parseLocationName = (rawLocation) => {
+    const match = rawLocation.match(/^(.*?)\s*\(([^()]+)\)\s*$/)
+    if (!match) return { name: rawLocation, timesOfDay: [], season: null }
+    const tokens = match[2].split('/')
+    const seasonToken = tokens.find(token => token.startsWith('SEASON'))
+    return {
+        name: match[1],
+        timesOfDay: tokens.filter(token => TIME_OF_DAY.includes(token)),
+        season: seasonToken ? SEASONS[Number(seasonToken.replace('SEASON', ''))].key : null,
+    }
 }
+
+// Generic, rarity-based helpers - not Horde-specific, reusable by future "rarity finder" style tools.
+export const getPokemonIdsByRarity = (rarity) =>
+    new Set(POKEMON.filter(pkmn => (pkmn.locations || []).some(l => l.rarity === rarity)).map(pkmn => pkmn.id))
+
+export const getPokemonLocationsByRarity = (id, rarity) => {
+    const pkmn = getPokemon(id)
+    if (!pkmn) return []
+    return (pkmn.locations || []).filter(l => l.rarity === rarity)
+}
+
+export const getOtherPokemonAtLocation = (pokemonId, regionId, location, rarity = 'Horde') =>
+    POKEMON
+        .filter(pkmn => pkmn.id !== pokemonId)
+        .filter(pkmn => (pkmn.locations || []).some(l =>
+            l.rarity === rarity && l.region_id === regionId && l.location === location
+        ))
+        .map(pkmn => ({ id: pkmn.id, name: pkmn.name }))
+
+export const getSeasonsForPokemon = (id, rarity = 'Horde') =>
+    [...new Set(
+        getPokemonLocationsByRarity(id, rarity)
+            .map(l => parseLocationName(l.location).season)
+            .filter(Boolean)
+    )]
+
+export const getAllSeasonsInUse = (rarity = 'Horde') => {
+    const seasons = new Set()
+    POKEMON.forEach(pkmn => (pkmn.locations || []).forEach(l => {
+        if (l.rarity === rarity) {
+            const season = parseLocationName(l.location).season
+            if (season) seasons.add(season)
+        }
+    }))
+    return [...seasons]
+}
+
+// Horde-specific conveniences built on the generic helpers above.
+export const getHordeEligiblePokemonIds = () => getPokemonIdsByRarity('Horde')
+
+export const getHordeLocationsForPokemon = (id) => getPokemonLocationsByRarity(id, 'Horde')
+
+// Modal-ready list of a Pokemon's horde spots: location info straight from monster.json,
+// the parsed time-of-day/season, and the other Pokemon sharing each spot. No percentage or
+// group-size (3x/5x) - monster.json has no such fields anywhere.
+export const getHordeEncounterDetails = (id) =>
+    getHordeLocationsForPokemon(id).map(location => {
+        const parsed = parseLocationName(location.location)
+        return {
+            key: `${location.region_id}-${location.location}`,
+            region_name: location.region_name,
+            location: location.location,
+            name: parsed.name,
+            timesOfDay: parsed.timesOfDay,
+            season: parsed.season,
+            type: location.type,
+            min_level: location.min_level,
+            max_level: location.max_level,
+            others: getOtherPokemonAtLocation(id, location.region_id, location.location),
+        }
+    })

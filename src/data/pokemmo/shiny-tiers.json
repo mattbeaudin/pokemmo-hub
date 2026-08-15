@@ -1,23 +1,1412 @@
 [
-  { "id": 19, "name": "Rattata", "tier": 0 },
-  { "id": 16, "name": "Pidgey", "tier": 0 },
-  { "id": 41, "name": "Zubat", "tier": 0 },
-  { "id": 74, "name": "Geodude", "tier": 0 },
-
-  { "id": 11, "name": "Metapod", "tier": 1 },
-  { "id": 14, "name": "Kakuna", "tier": 1 },
-  { "id": 20, "name": "Raticate", "tier": 1 },
-  { "id": 109, "name": "Koffing", "tier": 1 },
-
-  { "id": 88, "name": "Grimer", "tier": 2 },
-  { "id": 72, "name": "Tentacool", "tier": 2 },
-  { "id": 66, "name": "Machop", "tier": 2 },
-  { "id": 77, "name": "Ponyta", "tier": 2 },
-
-  { "id": 132, "name": "Ditto", "tier": 3 },
-  { "id": 183, "name": "Marill", "tier": 3 },
-  { "id": 22, "name": "Fearow", "tier": 3 },
-  { "id": 55, "name": "Golduck", "tier": 3 },
-  { "id": 510, "name": "Liepard", "tier": 3 },
-  { "id": 118, "name": "Goldeen", "tier": 3 }
+  {
+    "id": 1,
+    "name": "Bulbasaur",
+    "tier": 0
+  },
+  {
+    "id": 4,
+    "name": "Charmander",
+    "tier": 0
+  },
+  {
+    "id": 7,
+    "name": "Squirtle",
+    "tier": 0
+  },
+  {
+    "id": 133,
+    "name": "Eevee",
+    "tier": 0
+  },
+  {
+    "id": 137,
+    "name": "Porygon",
+    "tier": 0
+  },
+  {
+    "id": 143,
+    "name": "Snorlax",
+    "tier": 0
+  },
+  {
+    "id": 152,
+    "name": "Chikorita",
+    "tier": 0
+  },
+  {
+    "id": 155,
+    "name": "Cyndaquil",
+    "tier": 0
+  },
+  {
+    "id": 158,
+    "name": "Totodile",
+    "tier": 0
+  },
+  {
+    "id": 175,
+    "name": "Togepi",
+    "tier": 0
+  },
+  {
+    "id": 236,
+    "name": "Tyrogue",
+    "tier": 0
+  },
+  {
+    "id": 252,
+    "name": "Treecko",
+    "tier": 0
+  },
+  {
+    "id": 255,
+    "name": "Torchic",
+    "tier": 0
+  },
+  {
+    "id": 258,
+    "name": "Mudkip",
+    "tier": 0
+  },
+  {
+    "id": 292,
+    "name": "Shedinja",
+    "tier": 0
+  },
+  {
+    "id": 374,
+    "name": "Beldum",
+    "tier": 0
+  },
+  {
+    "id": 387,
+    "name": "Turtwig",
+    "tier": 0
+  },
+  {
+    "id": 390,
+    "name": "Chimchar",
+    "tier": 0
+  },
+  {
+    "id": 393,
+    "name": "Piplup",
+    "tier": 0
+  },
+  {
+    "id": 447,
+    "name": "Riolu",
+    "tier": 0
+  },
+  {
+    "id": 479,
+    "name": "Rotom",
+    "tier": 0
+  },
+  {
+    "id": 495,
+    "name": "Snivy",
+    "tier": 0
+  },
+  {
+    "id": 498,
+    "name": "Tepig",
+    "tier": 0
+  },
+  {
+    "id": 501,
+    "name": "Oshawott",
+    "tier": 0
+  },
+  {
+    "id": 113,
+    "name": "Chansey",
+    "tier": 1
+  },
+  {
+    "id": 115,
+    "name": "Kangaskhan",
+    "tier": 1
+  },
+  {
+    "id": 123,
+    "name": "Scyther",
+    "tier": 1
+  },
+  {
+    "id": 127,
+    "name": "Pinsir",
+    "tier": 1
+  },
+  {
+    "id": 185,
+    "name": "Sudowoodo",
+    "tier": 1
+  },
+  {
+    "id": 227,
+    "name": "Skarmory",
+    "tier": 1
+  },
+  {
+    "id": 285,
+    "name": "Shroomish",
+    "tier": 1
+  },
+  {
+    "id": 287,
+    "name": "Slakoth",
+    "tier": 1
+  },
+  {
+    "id": 300,
+    "name": "Skitty",
+    "tier": 1
+  },
+  {
+    "id": 311,
+    "name": "Plusle",
+    "tier": 1
+  },
+  {
+    "id": 312,
+    "name": "Minun",
+    "tier": 1
+  },
+  {
+    "id": 316,
+    "name": "Gulpin",
+    "tier": 1
+  },
+  {
+    "id": 351,
+    "name": "Castform",
+    "tier": 1
+  },
+  {
+    "id": 359,
+    "name": "Absol",
+    "tier": 1
+  },
+  {
+    "id": 412,
+    "name": "Burmy",
+    "tier": 1
+  },
+  {
+    "id": 415,
+    "name": "Combee",
+    "tier": 1
+  },
+  {
+    "id": 420,
+    "name": "Cherubi",
+    "tier": 1
+  },
+  {
+    "id": 442,
+    "name": "Spiritomb",
+    "tier": 1
+  },
+  {
+    "id": 451,
+    "name": "Skorupi",
+    "tier": 1
+  },
+  {
+    "id": 455,
+    "name": "Carnivine",
+    "tier": 1
+  },
+  {
+    "id": 511,
+    "name": "Pansage",
+    "tier": 1
+  },
+  {
+    "id": 513,
+    "name": "Pansear",
+    "tier": 1
+  },
+  {
+    "id": 515,
+    "name": "Panpour",
+    "tier": 1
+  },
+  {
+    "id": 529,
+    "name": "Drilbur",
+    "tier": 1
+  },
+  {
+    "id": 531,
+    "name": "Audino",
+    "tier": 1
+  },
+  {
+    "id": 580,
+    "name": "Ducklett",
+    "tier": 1
+  },
+  {
+    "id": 587,
+    "name": "Emolga",
+    "tier": 1
+  },
+  {
+    "id": 594,
+    "name": "Alomomola",
+    "tier": 1
+  },
+  {
+    "id": 636,
+    "name": "Larvesta",
+    "tier": 1
+  },
+  {
+    "id": 35,
+    "name": "Clefairy",
+    "tier": 2
+  },
+  {
+    "id": 90,
+    "name": "Shellder",
+    "tier": 2
+  },
+  {
+    "id": 122,
+    "name": "Mr. Mime",
+    "tier": 2
+  },
+  {
+    "id": 131,
+    "name": "Lapras",
+    "tier": 2
+  },
+  {
+    "id": 138,
+    "name": "Omanyte",
+    "tier": 2
+  },
+  {
+    "id": 140,
+    "name": "Kabuto",
+    "tier": 2
+  },
+  {
+    "id": 142,
+    "name": "Aerodactyl",
+    "tier": 2
+  },
+  {
+    "id": 190,
+    "name": "Aipom",
+    "tier": 2
+  },
+  {
+    "id": 204,
+    "name": "Pineco",
+    "tier": 2
+  },
+  {
+    "id": 211,
+    "name": "Qwilfish",
+    "tier": 2
+  },
+  {
+    "id": 213,
+    "name": "Shuckle",
+    "tier": 2
+  },
+  {
+    "id": 222,
+    "name": "Corsola",
+    "tier": 2
+  },
+  {
+    "id": 228,
+    "name": "Houndour",
+    "tier": 2
+  },
+  {
+    "id": 241,
+    "name": "Miltank",
+    "tier": 2
+  },
+  {
+    "id": 280,
+    "name": "Ralts",
+    "tier": 2
+  },
+  {
+    "id": 290,
+    "name": "Nincada",
+    "tier": 2
+  },
+  {
+    "id": 345,
+    "name": "Lileep",
+    "tier": 2
+  },
+  {
+    "id": 347,
+    "name": "Anorith",
+    "tier": 2
+  },
+  {
+    "id": 349,
+    "name": "Feebas",
+    "tier": 2
+  },
+  {
+    "id": 369,
+    "name": "Relicanth",
+    "tier": 2
+  },
+  {
+    "id": 371,
+    "name": "Bagon",
+    "tier": 2
+  },
+  {
+    "id": 408,
+    "name": "Cranidos",
+    "tier": 2
+  },
+  {
+    "id": 410,
+    "name": "Shieldon",
+    "tier": 2
+  },
+  {
+    "id": 564,
+    "name": "Tirtouga",
+    "tier": 2
+  },
+  {
+    "id": 566,
+    "name": "Archen",
+    "tier": 2
+  },
+  {
+    "id": 570,
+    "name": "Zorua",
+    "tier": 2
+  },
+  {
+    "id": 624,
+    "name": "Pawniard",
+    "tier": 2
+  },
+  {
+    "id": 37,
+    "name": "Vulpix",
+    "tier": 3
+  },
+  {
+    "id": 58,
+    "name": "Growlithe",
+    "tier": 3
+  },
+  {
+    "id": 83,
+    "name": "Farfetch'd",
+    "tier": 3
+  },
+  {
+    "id": 102,
+    "name": "Exeggcute",
+    "tier": 3
+  },
+  {
+    "id": 120,
+    "name": "Staryu",
+    "tier": 3
+  },
+  {
+    "id": 124,
+    "name": "Jynx",
+    "tier": 3
+  },
+  {
+    "id": 126,
+    "name": "Magmar",
+    "tier": 3
+  },
+  {
+    "id": 128,
+    "name": "Tauros",
+    "tier": 3
+  },
+  {
+    "id": 147,
+    "name": "Dratini",
+    "tier": 3
+  },
+  {
+    "id": 161,
+    "name": "Sentret",
+    "tier": 3
+  },
+  {
+    "id": 165,
+    "name": "Ledyba",
+    "tier": 3
+  },
+  {
+    "id": 191,
+    "name": "Sunkern",
+    "tier": 3
+  },
+  {
+    "id": 193,
+    "name": "Yanma",
+    "tier": 3
+  },
+  {
+    "id": 198,
+    "name": "Murkrow",
+    "tier": 3
+  },
+  {
+    "id": 200,
+    "name": "Misdreavus",
+    "tier": 3
+  },
+  {
+    "id": 207,
+    "name": "Gligar",
+    "tier": 3
+  },
+  {
+    "id": 214,
+    "name": "Heracross",
+    "tier": 3
+  },
+  {
+    "id": 223,
+    "name": "Remoraid",
+    "tier": 3
+  },
+  {
+    "id": 225,
+    "name": "Delibird",
+    "tier": 3
+  },
+  {
+    "id": 226,
+    "name": "Mantine",
+    "tier": 3
+  },
+  {
+    "id": 299,
+    "name": "Nosepass",
+    "tier": 3
+  },
+  {
+    "id": 313,
+    "name": "Volbeat",
+    "tier": 3
+  },
+  {
+    "id": 314,
+    "name": "Illumise",
+    "tier": 3
+  },
+  {
+    "id": 318,
+    "name": "Carvanha",
+    "tier": 3
+  },
+  {
+    "id": 320,
+    "name": "Wailmer",
+    "tier": 3
+  },
+  {
+    "id": 331,
+    "name": "Cacnea",
+    "tier": 3
+  },
+  {
+    "id": 335,
+    "name": "Zangoose",
+    "tier": 3
+  },
+  {
+    "id": 336,
+    "name": "Seviper",
+    "tier": 3
+  },
+  {
+    "id": 339,
+    "name": "Barboach",
+    "tier": 3
+  },
+  {
+    "id": 352,
+    "name": "Kecleon",
+    "tier": 3
+  },
+  {
+    "id": 357,
+    "name": "Tropius",
+    "tier": 3
+  },
+  {
+    "id": 358,
+    "name": "Chimecho",
+    "tier": 3
+  },
+  {
+    "id": 370,
+    "name": "Luvdisc",
+    "tier": 3
+  },
+  {
+    "id": 425,
+    "name": "Drifloon",
+    "tier": 3
+  },
+  {
+    "id": 434,
+    "name": "Stunky",
+    "tier": 3
+  },
+  {
+    "id": 441,
+    "name": "Chatot",
+    "tier": 3
+  },
+  {
+    "id": 443,
+    "name": "Gible",
+    "tier": 3
+  },
+  {
+    "id": 453,
+    "name": "Croagunk",
+    "tier": 3
+  },
+  {
+    "id": 456,
+    "name": "Finneon",
+    "tier": 3
+  },
+  {
+    "id": 554,
+    "name": "Darumaka",
+    "tier": 3
+  },
+  {
+    "id": 556,
+    "name": "Maractus",
+    "tier": 3
+  },
+  {
+    "id": 561,
+    "name": "Sigilyph",
+    "tier": 3
+  },
+  {
+    "id": 615,
+    "name": "Cryogonal",
+    "tier": 3
+  },
+  {
+    "id": 43,
+    "name": "Oddish",
+    "tier": 4
+  },
+  {
+    "id": 48,
+    "name": "Venonat",
+    "tier": 4
+  },
+  {
+    "id": 52,
+    "name": "Meowth",
+    "tier": 4
+  },
+  {
+    "id": 96,
+    "name": "Drowzee",
+    "tier": 4
+  },
+  {
+    "id": 125,
+    "name": "Electabuzz",
+    "tier": 4
+  },
+  {
+    "id": 163,
+    "name": "Hoothoot",
+    "tier": 4
+  },
+  {
+    "id": 167,
+    "name": "Spinarak",
+    "tier": 4
+  },
+  {
+    "id": 194,
+    "name": "Wooper",
+    "tier": 4
+  },
+  {
+    "id": 209,
+    "name": "Snubbull",
+    "tier": 4
+  },
+  {
+    "id": 215,
+    "name": "Sneasel",
+    "tier": 4
+  },
+  {
+    "id": 246,
+    "name": "Larvitar",
+    "tier": 4
+  },
+  {
+    "id": 270,
+    "name": "Lotad",
+    "tier": 4
+  },
+  {
+    "id": 283,
+    "name": "Surskit",
+    "tier": 4
+  },
+  {
+    "id": 327,
+    "name": "Spinda",
+    "tier": 4
+  },
+  {
+    "id": 328,
+    "name": "Trapinch",
+    "tier": 4
+  },
+  {
+    "id": 337,
+    "name": "Lunatone",
+    "tier": 4
+  },
+  {
+    "id": 341,
+    "name": "Corphish",
+    "tier": 4
+  },
+  {
+    "id": 401,
+    "name": "Kricketot",
+    "tier": 4
+  },
+  {
+    "id": 417,
+    "name": "Pachirisu",
+    "tier": 4
+  },
+  {
+    "id": 427,
+    "name": "Buneary",
+    "tier": 4
+  },
+  {
+    "id": 509,
+    "name": "Purrloin",
+    "tier": 4
+  },
+  {
+    "id": 519,
+    "name": "Pidove",
+    "tier": 4
+  },
+  {
+    "id": 559,
+    "name": "Scraggy",
+    "tier": 4
+  },
+  {
+    "id": 610,
+    "name": "Axew",
+    "tier": 4
+  },
+  {
+    "id": 626,
+    "name": "Bouffalant",
+    "tier": 4
+  },
+  {
+    "id": 627,
+    "name": "Rufflet",
+    "tier": 4
+  },
+  {
+    "id": 631,
+    "name": "Heatmor",
+    "tier": 4
+  },
+  {
+    "id": 633,
+    "name": "Deino",
+    "tier": 4
+  },
+  {
+    "id": 10,
+    "name": "Caterpie",
+    "tier": 5
+  },
+  {
+    "id": 13,
+    "name": "Weedle",
+    "tier": 5
+  },
+  {
+    "id": 25,
+    "name": "Pikachu",
+    "tier": 5
+  },
+  {
+    "id": 32,
+    "name": "Nidoran♂",
+    "tier": 5
+  },
+  {
+    "id": 39,
+    "name": "Jigglypuff",
+    "tier": 5
+  },
+  {
+    "id": 46,
+    "name": "Paras",
+    "tier": 5
+  },
+  {
+    "id": 69,
+    "name": "Bellsprout",
+    "tier": 5
+  },
+  {
+    "id": 116,
+    "name": "Horsea",
+    "tier": 5
+  },
+  {
+    "id": 177,
+    "name": "Natu",
+    "tier": 5
+  },
+  {
+    "id": 187,
+    "name": "Hoppip",
+    "tier": 5
+  },
+  {
+    "id": 216,
+    "name": "Teddiursa",
+    "tier": 5
+  },
+  {
+    "id": 265,
+    "name": "Wurmple",
+    "tier": 5
+  },
+  {
+    "id": 276,
+    "name": "Taillow",
+    "tier": 5
+  },
+  {
+    "id": 322,
+    "name": "Numel",
+    "tier": 5
+  },
+  {
+    "id": 333,
+    "name": "Swablu",
+    "tier": 5
+  },
+  {
+    "id": 361,
+    "name": "Snorunt",
+    "tier": 5
+  },
+  {
+    "id": 396,
+    "name": "Starly",
+    "tier": 5
+  },
+  {
+    "id": 449,
+    "name": "Hippopotas",
+    "tier": 5
+  },
+  {
+    "id": 506,
+    "name": "Lillipup",
+    "tier": 5
+  },
+  {
+    "id": 532,
+    "name": "Timburr",
+    "tier": 5
+  },
+  {
+    "id": 538,
+    "name": "Throh",
+    "tier": 5
+  },
+  {
+    "id": 539,
+    "name": "Sawk",
+    "tier": 5
+  },
+  {
+    "id": 543,
+    "name": "Venipede",
+    "tier": 5
+  },
+  {
+    "id": 546,
+    "name": "Cottonee",
+    "tier": 5
+  },
+  {
+    "id": 548,
+    "name": "Petilil",
+    "tier": 5
+  },
+  {
+    "id": 557,
+    "name": "Dwebble",
+    "tier": 5
+  },
+  {
+    "id": 568,
+    "name": "Trubbish",
+    "tier": 5
+  },
+  {
+    "id": 588,
+    "name": "Karrablast",
+    "tier": 5
+  },
+  {
+    "id": 590,
+    "name": "Foongus",
+    "tier": 5
+  },
+  {
+    "id": 595,
+    "name": "Joltik",
+    "tier": 5
+  },
+  {
+    "id": 597,
+    "name": "Ferroseed",
+    "tier": 5
+  },
+  {
+    "id": 602,
+    "name": "Tynamo",
+    "tier": 5
+  },
+  {
+    "id": 613,
+    "name": "Cubchoo",
+    "tier": 5
+  },
+  {
+    "id": 616,
+    "name": "Shelmet",
+    "tier": 5
+  },
+  {
+    "id": 16,
+    "name": "Pidgey",
+    "tier": 6
+  },
+  {
+    "id": 21,
+    "name": "Spearow",
+    "tier": 6
+  },
+  {
+    "id": 23,
+    "name": "Ekans",
+    "tier": 6
+  },
+  {
+    "id": 29,
+    "name": "Nidoran♀",
+    "tier": 6
+  },
+  {
+    "id": 50,
+    "name": "Diglett",
+    "tier": 6
+  },
+  {
+    "id": 56,
+    "name": "Mankey",
+    "tier": 6
+  },
+  {
+    "id": 63,
+    "name": "Abra",
+    "tier": 6
+  },
+  {
+    "id": 77,
+    "name": "Ponyta",
+    "tier": 6
+  },
+  {
+    "id": 84,
+    "name": "Doduo",
+    "tier": 6
+  },
+  {
+    "id": 88,
+    "name": "Grimer",
+    "tier": 6
+  },
+  {
+    "id": 104,
+    "name": "Cubone",
+    "tier": 6
+  },
+  {
+    "id": 108,
+    "name": "Lickitung",
+    "tier": 6
+  },
+  {
+    "id": 114,
+    "name": "Tangela",
+    "tier": 6
+  },
+  {
+    "id": 132,
+    "name": "Ditto",
+    "tier": 6
+  },
+  {
+    "id": 170,
+    "name": "Chinchou",
+    "tier": 6
+  },
+  {
+    "id": 179,
+    "name": "Mareep",
+    "tier": 6
+  },
+  {
+    "id": 218,
+    "name": "Slugma",
+    "tier": 6
+  },
+  {
+    "id": 231,
+    "name": "Phanpy",
+    "tier": 6
+  },
+  {
+    "id": 234,
+    "name": "Stantler",
+    "tier": 6
+  },
+  {
+    "id": 261,
+    "name": "Poochyena",
+    "tier": 6
+  },
+  {
+    "id": 263,
+    "name": "Zigzagoon",
+    "tier": 6
+  },
+  {
+    "id": 278,
+    "name": "Wingull",
+    "tier": 6
+  },
+  {
+    "id": 293,
+    "name": "Whismur",
+    "tier": 6
+  },
+  {
+    "id": 296,
+    "name": "Makuhita",
+    "tier": 6
+  },
+  {
+    "id": 302,
+    "name": "Sableye",
+    "tier": 6
+  },
+  {
+    "id": 303,
+    "name": "Mawile",
+    "tier": 6
+  },
+  {
+    "id": 304,
+    "name": "Aron",
+    "tier": 6
+  },
+  {
+    "id": 309,
+    "name": "Electrike",
+    "tier": 6
+  },
+  {
+    "id": 315,
+    "name": "Roselia",
+    "tier": 6
+  },
+  {
+    "id": 325,
+    "name": "Spoink",
+    "tier": 6
+  },
+  {
+    "id": 338,
+    "name": "Solrock",
+    "tier": 6
+  },
+  {
+    "id": 366,
+    "name": "Clamperl",
+    "tier": 6
+  },
+  {
+    "id": 399,
+    "name": "Bidoof",
+    "tier": 6
+  },
+  {
+    "id": 403,
+    "name": "Shinx",
+    "tier": 6
+  },
+  {
+    "id": 459,
+    "name": "Snover",
+    "tier": 6
+  },
+  {
+    "id": 504,
+    "name": "Patrat",
+    "tier": 6
+  },
+  {
+    "id": 517,
+    "name": "Munna",
+    "tier": 6
+  },
+  {
+    "id": 522,
+    "name": "Blitzle",
+    "tier": 6
+  },
+  {
+    "id": 524,
+    "name": "Roggenrola",
+    "tier": 6
+  },
+  {
+    "id": 527,
+    "name": "Woobat",
+    "tier": 6
+  },
+  {
+    "id": 535,
+    "name": "Tympole",
+    "tier": 6
+  },
+  {
+    "id": 540,
+    "name": "Sewaddle",
+    "tier": 6
+  },
+  {
+    "id": 572,
+    "name": "Minccino",
+    "tier": 6
+  },
+  {
+    "id": 574,
+    "name": "Gothita",
+    "tier": 6
+  },
+  {
+    "id": 577,
+    "name": "Solosis",
+    "tier": 6
+  },
+  {
+    "id": 582,
+    "name": "Vanillite",
+    "tier": 6
+  },
+  {
+    "id": 599,
+    "name": "Klink",
+    "tier": 6
+  },
+  {
+    "id": 605,
+    "name": "Elgyem",
+    "tier": 6
+  },
+  {
+    "id": 618,
+    "name": "Stunfisk",
+    "tier": 6
+  },
+  {
+    "id": 621,
+    "name": "Druddigon",
+    "tier": 6
+  },
+  {
+    "id": 629,
+    "name": "Vullaby",
+    "tier": 6
+  },
+  {
+    "id": 632,
+    "name": "Durant",
+    "tier": 6
+  },
+  {
+    "id": 19,
+    "name": "Rattata",
+    "tier": 7
+  },
+  {
+    "id": 27,
+    "name": "Sandshrew",
+    "tier": 7
+  },
+  {
+    "id": 41,
+    "name": "Zubat",
+    "tier": 7
+  },
+  {
+    "id": 54,
+    "name": "Psyduck",
+    "tier": 7
+  },
+  {
+    "id": 60,
+    "name": "Poliwag",
+    "tier": 7
+  },
+  {
+    "id": 66,
+    "name": "Machop",
+    "tier": 7
+  },
+  {
+    "id": 72,
+    "name": "Tentacool",
+    "tier": 7
+  },
+  {
+    "id": 74,
+    "name": "Geodude",
+    "tier": 7
+  },
+  {
+    "id": 79,
+    "name": "Slowpoke",
+    "tier": 7
+  },
+  {
+    "id": 81,
+    "name": "Magnemite",
+    "tier": 7
+  },
+  {
+    "id": 86,
+    "name": "Seel",
+    "tier": 7
+  },
+  {
+    "id": 92,
+    "name": "Gastly",
+    "tier": 7
+  },
+  {
+    "id": 95,
+    "name": "Onix",
+    "tier": 7
+  },
+  {
+    "id": 98,
+    "name": "Krabby",
+    "tier": 7
+  },
+  {
+    "id": 100,
+    "name": "Voltorb",
+    "tier": 7
+  },
+  {
+    "id": 109,
+    "name": "Koffing",
+    "tier": 7
+  },
+  {
+    "id": 111,
+    "name": "Rhyhorn",
+    "tier": 7
+  },
+  {
+    "id": 118,
+    "name": "Goldeen",
+    "tier": 7
+  },
+  {
+    "id": 129,
+    "name": "Magikarp",
+    "tier": 7
+  },
+  {
+    "id": 183,
+    "name": "Marill",
+    "tier": 7
+  },
+  {
+    "id": 201,
+    "name": "Unown",
+    "tier": 7
+  },
+  {
+    "id": 202,
+    "name": "Wobbuffet",
+    "tier": 7
+  },
+  {
+    "id": 203,
+    "name": "Girafarig",
+    "tier": 7
+  },
+  {
+    "id": 206,
+    "name": "Dunsparce",
+    "tier": 7
+  },
+  {
+    "id": 220,
+    "name": "Swinub",
+    "tier": 7
+  },
+  {
+    "id": 235,
+    "name": "Smeargle",
+    "tier": 7
+  },
+  {
+    "id": 273,
+    "name": "Seedot",
+    "tier": 7
+  },
+  {
+    "id": 307,
+    "name": "Meditite",
+    "tier": 7
+  },
+  {
+    "id": 324,
+    "name": "Torkoal",
+    "tier": 7
+  },
+  {
+    "id": 343,
+    "name": "Baltoy",
+    "tier": 7
+  },
+  {
+    "id": 353,
+    "name": "Shuppet",
+    "tier": 7
+  },
+  {
+    "id": 355,
+    "name": "Duskull",
+    "tier": 7
+  },
+  {
+    "id": 363,
+    "name": "Spheal",
+    "tier": 7
+  },
+  {
+    "id": 418,
+    "name": "Buizel",
+    "tier": 7
+  },
+  {
+    "id": 422,
+    "name": "Shellos",
+    "tier": 7
+  },
+  {
+    "id": 431,
+    "name": "Glameow",
+    "tier": 7
+  },
+  {
+    "id": 436,
+    "name": "Bronzor",
+    "tier": 7
+  },
+  {
+    "id": 550,
+    "name": "Basculin",
+    "tier": 7
+  },
+  {
+    "id": 551,
+    "name": "Sandile",
+    "tier": 7
+  },
+  {
+    "id": 562,
+    "name": "Yamask",
+    "tier": 7
+  },
+  {
+    "id": 585,
+    "name": "Deerling",
+    "tier": 7
+  },
+  {
+    "id": 592,
+    "name": "Frillish",
+    "tier": 7
+  },
+  {
+    "id": 607,
+    "name": "Litwick",
+    "tier": 7
+  },
+  {
+    "id": 619,
+    "name": "Mienfoo",
+    "tier": 7
+  },
+  {
+    "id": 622,
+    "name": "Golett",
+    "tier": 7
+  }
 ]

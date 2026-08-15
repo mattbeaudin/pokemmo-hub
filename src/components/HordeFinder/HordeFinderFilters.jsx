@@ -2,7 +2,8 @@ import React, { useMemo } from 'react'
 import { Row, Col } from 'react-bootstrap'
 import { Search, Button, Typography } from '../Atoms'
 import { useTranslations } from '../../context/TranslationsContext'
-import { SHINY_TIER_LABELS, getAllSeasonsInUse } from '../../utils/hordeFinder'
+import { SHINY_TIER_LABELS } from '../../utils/hordeFinder'
+import { getAllSeasonsInUse } from '../../utils/location'
 
 export const HordeFinderFilters = ({ season, tier, nameSearch, onSeasonChange, onTierChange, onNameSearchChange, onClear }) => {
     const { t } = useTranslations()

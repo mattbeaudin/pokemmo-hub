@@ -34,7 +34,7 @@ export const query = graphql`
   }
 `
 
-const description = "Find every Pokemon obtainable via horde encounters in PokeMMO, grouped by shiny tier, with location, chance, season and time-of-day details."
+const description = "Find every Pokemon obtainable via horde encounters in PokeMMO, grouped by shiny tier, with location, season and time-of-day details."
 export const Head = () => <Seo title="Horde Finder" description={description}></Seo>
 
 export default HordeFinderPage
